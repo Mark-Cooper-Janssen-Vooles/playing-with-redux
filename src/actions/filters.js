@@ -25,7 +25,7 @@ export const sortByAmount = () => {
 // SET_START_DATE
 export const setStartDate = (startDate) => {
   const setDate = typeof(startDate) === 'number' ? startDate : undefined
-
+  console.log(typeof startDate);
   return {
     type: "SET_START_DATE",
     startDate: setDate

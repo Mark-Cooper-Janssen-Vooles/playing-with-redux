@@ -16,6 +16,7 @@ export const addExpense = ({ description = '', note = '', amount = 0, createdAt 
 
 // REMOVE_EXPENSE (by ID)
 export const removeExpense = ({id}) => {
+  console.log("removed expense");
   return {
     type: "REMOVE_EXPENSE",
     expense: {
